@@ -15,113 +15,121 @@
   </head>
   <body>
     <div class="container">
-      <div class="card mt-3">
-        <div class="card-header bg-primary">
-          <h4 class="text-center">PT INTERNASIONAL NIAGA GLOBAL INDO</h4>
-        </div>
-        <div class="card-body">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Tanggal</label>
-              <input type="date" class="form-control tanggal" id="exampleInputEmail1" aria-describedby="emailHelp" />
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <div class="card mt-3 mb-3">
+            <div class="card-header bg-primary">
+              <h4 class="text-center">PT INTERNASIONAL NIAGA GLOBAL INDO</h4>
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" />
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="tanggal" class="form-label">Tanggal</label>
+                  <input type="date" class="form-control tanggal" id="tanggal" aria-describedby="emailHelp" />
+                </div>
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="nama" />
+                </div>
+                <div class="mb-3">
+                  <label class="form-check-label" for="jabatan">Jabatan</label>
+                  <select class="form-select" id="jabatan">
+                    <option value="Produksi">Produksi</option>
+                    <option value="Karyawan">Karyawan</option>
+                    <option value="Manager">Manager</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="ddp" class="form-label">Departement</label>
+                  <input type="text" class="form-control" id="ddp" value="Produksi" />
+                </div>
+                <div class="mb-3">
+                  <label for="gpp" class="form-label">Gaji pokok preiode</label>
+                  <input type="number" class="form-control gajih" id="gpp" value="50000" />
+                </div>
+                <div class="mb-3">
+                  <label for="lt" class="form-label">Lembur Terusan</label>
+                  <input type="number" class="form-control" id="lt" value="60000" />
+                </div>
+                <div class="mb-3">
+                  <label for="lembur" class="form-label">Lembur</label>
+                  <input type="number" class="form-control" id="lembur" value="75000" />
+                </div>
+                <!-- <div class="mb-3">
+                  <label for="premi" class="form-label">Premi Kehadiran</label>
+                  <input type="number" class="form-control" id="premi" value="5000" />
+                </div> -->
+                <div class="mb-3">
+                  <label for="kasbon" class="form-label">Kasbon</label>
+                  <input type="number" class="form-control" id="kasbon" value="0" />
+                </div>
+                <button type="button" class="btn btn-primary btn-submit">Submit</button>
+              </form>
             </div>
-            <div class="mb-3">
-              <label class="form-check-label" for="exampleCheck1">Jabatan</label>
-              <select class="form-select" id="exampleCheck1">
-                <option value="Produksi">Produksi</option>
-                <option value="Karyawan">Karyawan</option>
-                <option value="Manager">Manager</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="ddp" class="form-label">Departement</label>
-              <input type="text" class="form-control" id="ddp" />
-            </div>
-            <div class="mb-3">
-              <label for="gpp" class="form-label">Gaji pokok preiode</label>
-              <input type="number" class="form-control gajih" id="gpp" value="50000" />
-            </div>
-            <div class="mb-3">
-              <label for="Lt" class="form-label">Lembur Terusan</label>
-              <input type="number" class="form-control" id="Lt" value="60000" />
-            </div>
-            <div class="mb-3">
-              <label for="lembur" class="form-label">Lembur</label>
-              <input type="number" class="form-control" id="Lembur" value="75000" />
-            </div>
-            <div class="mb-3">
-              <label for="Libur" class="form-label">Libur</label>
-              <input type="number" class="form-control" id="Libur" value="25000" />
-            </div>
-            <div class="mb-3">
-              <label for="premi" class="form-label">Premi Kehadiran</label>
-              <input type="number" class="form-control" id="premi" value="5000" />
-            </div>
-            <div class="mb-3">
-              <label for="kasbon" class="form-label">Kasbon</label>
-              <input type="number" class="form-control" id="kasbon" value="0" />
-            </div>
-            <button type="button" class="btn btn-primary btn-submit">Submit</button>
-          </form>
+          </div>
         </div>
       </div>
-      <div class="card mt-4">
-        <div class="card-header bg-primary">
-          <h4 class="text-center">PT INTERNASIONAL GLOBALINDO</h4>
-        </div>
-        <div class="card-body">
-          <table>
-            <tr>
-              <th>Tanggal</th>
-              <td>:</td>
-            </tr>
-            <tr>
-              <th>Nama</th>
-              <td>:</td>
-            </tr>
-            <tr>
-              <th>Jabatan</th>
-              <td>:</td>
-            </tr>
-            <tr>
-              <th>Departement</th>
-              <td>:</td>
-            </tr>
-            <tr>
-              <th>Gaji Pokok</th>
-              <td>:</td>
-            </tr>
-            <tr>
-              <th>Priode</th>
-              <td>:</td>
-            </tr>
-            <tr>
-              <th>Lembur Terusan</th>
-              <td>:</td>
-            </tr>
-            <tr>
-              <th>Lembur</th>
-              <td>:</td>
-            </tr>
-            <tr>
-              <th>Premi Kehadiran</th>
-              <td>:</td>
-            </tr>
-            <tr>
-              <th>Kasbon</th>
-              <td>:</td>
-            </tr>
-          </table>
 
-          <div class="border mt-3"></div>
+      <!-- Hasil -->
+      <div class="row">
+        <div class="col">
+          <div class="card mt-4 d-none">
+            <div class="card-header bg-primary">
+              <h4 class="text-center">PT INTERNASIONAL GLOBALINDO</h4>
+            </div>
+            <div class="card-body">
+              <table>
+                <tr>
+                  <th>Tanggal</th>
+                  <td>:</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Nama</th>
+                  <td>:</td>
+                </tr>
+                <tr>
+                  <th>Jabatan</th>
+                  <td>:</td>
+                </tr>
+                <tr>
+                  <th>Departement</th>
+                  <td>:</td>
+                </tr>
+                <tr>
+                  <th>Gaji Pokok</th>
+                  <td>:</td>
+                  <td class="gajih"></td>
+                </tr>
+                <tr>
+                  <th>Priode</th>
+                  <td>:</td>
+                </tr>
+                <tr>
+                  <th>Lembur Terusan</th>
+                  <td>:</td>
+                </tr>
+                <tr>
+                  <th>Lembur</th>
+                  <td>:</td>
+                </tr>
+                <tr>
+                  <th>Premi Kehadiran</th>
+                  <td>:</td>
+                </tr>
+                <tr>
+                  <th>Kasbon</th>
+                  <td>:</td>
+                </tr>
+              </table>
 
-          <div class="d-flex justify-content-between">
-            <p>Total</p>
-            <p>IDR</p>
+              <div class="border mt-3"></div>
+
+              <div class="d-flex justify-content-between">
+                <p>Total</p>
+                <p>IDR</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
