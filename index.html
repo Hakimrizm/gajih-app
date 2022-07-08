@@ -13,11 +13,11 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="public/css/style.css" />
   </head>
-  <body>
+  <body class="bg-primary bg-opacity-25">
     <div class="container">
       <div class="row">
         <div class="col d-flex justify-content-center">
-          <div class="card mt-3 mb-3">
+          <div class="card mt-3 mb-3 shadow-sm card-form">
             <div class="card-header bg-primary">
               <h4 class="text-center">PT INTERNASIONAL NIAGA GLOBAL INDO</h4>
             </div>
@@ -46,6 +46,7 @@
                 <div class="mb-3">
                   <label for="gpp" class="form-label">Gaji pokok preiode</label>
                   <input type="number" class="form-control gajih" id="gpp" value="50000" />
+                  <div id="emailHelp" class="form-text">Per tiga bulan</div>
                 </div>
                 <div class="mb-3">
                   <label for="lt" class="form-label">Lembur Terusan</label>
@@ -61,7 +62,7 @@
                 </div> -->
                 <div class="mb-3">
                   <label for="kasbon" class="form-label">Kasbon</label>
-                  <input type="number" class="form-control" id="kasbon" value="0" />
+                  <input type="number" class="form-control" id="kasbon" value="0" min="0" />
                 </div>
                 <button type="button" class="btn btn-primary btn-submit">Submit</button>
               </form>
@@ -71,68 +72,7 @@
       </div>
 
       <!-- Hasil -->
-      <div class="row">
-        <div class="col">
-          <div class="card mt-4 d-none">
-            <div class="card-header bg-primary">
-              <h4 class="text-center">PT INTERNASIONAL GLOBALINDO</h4>
-            </div>
-            <div class="card-body">
-              <table>
-                <tr>
-                  <th>Tanggal</th>
-                  <td>:</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>Nama</th>
-                  <td>:</td>
-                </tr>
-                <tr>
-                  <th>Jabatan</th>
-                  <td>:</td>
-                </tr>
-                <tr>
-                  <th>Departement</th>
-                  <td>:</td>
-                </tr>
-                <tr>
-                  <th>Gaji Pokok</th>
-                  <td>:</td>
-                  <td class="gajih"></td>
-                </tr>
-                <tr>
-                  <th>Priode</th>
-                  <td>:</td>
-                </tr>
-                <tr>
-                  <th>Lembur Terusan</th>
-                  <td>:</td>
-                </tr>
-                <tr>
-                  <th>Lembur</th>
-                  <td>:</td>
-                </tr>
-                <tr>
-                  <th>Premi Kehadiran</th>
-                  <td>:</td>
-                </tr>
-                <tr>
-                  <th>Kasbon</th>
-                  <td>:</td>
-                </tr>
-              </table>
-
-              <div class="border mt-3"></div>
-
-              <div class="d-flex justify-content-between">
-                <p>Total</p>
-                <p>IDR</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="output"></div>
     </div>
 
     <script src="public/js/script.js"></script>
