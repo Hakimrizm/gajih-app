@@ -95,9 +95,6 @@ function output(tanggal, nama, jabatan, dpp, gajih, lt, lembur, kasbon, total) {
           </div>`;
 }
 
-const date = new Date(2018, 2, 12);
-console.log(date);
-
 btn.addEventListener("click", function () {
   const waktu = document.getElementById("dariTanggal").value;
   const waktu2 = document.getElementById("sampaiTanggal").value;
