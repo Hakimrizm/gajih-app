@@ -6,6 +6,19 @@ function getValue(el) {
   return parseInt(value);
 }
 
+function countDate(date1, date2) {
+  const oneDay = 24 * 60 * 60 * 1000; // Jam * Menit * Detik * Milisekon
+  const firstDate = date1;
+  const secondDate = date2;
+  return Math.round(Math.abs((firstDate - secondDate) / oneDay));
+}
+
+function dateFormat(d) {
+  const parse = d.split("-");
+  let parseDate = new Date(parse[0], parse[1] - 1, parse[2]);
+  return parseDate;
+}
+
 function setIdr(idr) {
   const arr = String(idr).split("").reverse();
 
@@ -82,13 +95,20 @@ function output(tanggal, nama, jabatan, dpp, gajih, lt, lembur, kasbon, total) {
           </div>`;
 }
 
+const date = new Date(2018, 2, 12);
+console.log(date);
+
 btn.addEventListener("click", function () {
-  const waktu = document.getElementById("tanggal").value;
+  const waktu = document.getElementById("dariTanggal").value;
+  const waktu2 = document.getElementById("sampaiTanggal").value;
+  const tanggal = dateFormat(waktu);
+  const tanggal2 = dateFormat(waktu2);
+  const hasil = countDate(tanggal, tanggal2);
   const nama = document.getElementById("nama").value;
   const jabatan = document.getElementById("jabatan").value;
   const dpp = document.getElementById("ddp").value;
 
-  const gajih = getValue("gpp") * 3;
+  const gajih = getValue("gpp") * hasil;
   const lt = getValue("lt");
   const lembur = getValue("lembur");
   const kasbon = getValue("kasbon");
