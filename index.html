@@ -13,61 +13,121 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="public/css/style.css" />
   </head>
-  <body class="bg-primary bg-opacity-25">
-    <div class="container">
+  <body>
+    <div class="container-fluid">
       <div class="row">
-        <div class="col d-flex justify-content-center">
+        <div class="col-12 d-flex justify-content-center">
           <div class="card mt-3 mb-3 shadow-sm card-form">
             <div class="card-header bg-primary">
-              <h4 class="text-center">PT INTERNASIONAL NIAGA GLOBAL INDO</h4>
+              <h4 class="text-center p-3 text-light">
+                PT INTERNASIONAL NIAGA GLOBAL INDO
+              </h4>
             </div>
             <div class="card-body">
               <form>
-                <div class="mb-3">
-                  <label for="dariTanggal" class="form-label">Dari Tanggal</label>
-                  <input type="date" class="form-control tanggal" id="dariTanggal" aria-describedby="emailHelp" required />
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label for="dariTanggal" class="form-label"
+                          >Dari Tanggal</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control tanggal"
+                          id="dariTanggal"
+                          aria-describedby="emailHelp"
+                          required
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="sampaiTanggal" class="form-label"
+                          >Sampai Tanggal</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control tanggal"
+                          id="sampaiTanggal"
+                          aria-describedby="emailHelp"
+                          required
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nama"
+                          required
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <label class="form-check-label" for="jabatan"
+                          >Jabatan</label
+                        >
+                        <select class="form-select" id="jabatan">
+                          <option value="Produksi">Produksi</option>
+                          <option value="Karyawan">Karyawan</option>
+                          <option value="Manager">Manager</option>
+                        </select>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="ddp" class="form-label">Departement</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="ddp"
+                          value="Produksi"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label for="gpp" class="form-label"
+                          >Gaji pokok preiode</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control gajih"
+                          id="gpp"
+                          value="50000"
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="lembur" class="form-label">Lembur</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="lembur"
+                          value="0"
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="kasbon" class="form-label">Kasbon</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="kasbon"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-submit mt-3 ms-3"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <div class="mb-3">
-                  <label for="sampaiTanggal" class="form-label">Sampai Tanggal</label>
-                  <input type="date" class="form-control tanggal" id="sampaiTanggal" aria-describedby="emailHelp" required />
-                </div>
-                <div class="mb-3">
-                  <label for="nama" class="form-label">Nama</label>
-                  <input type="text" class="form-control" id="nama" required />
-                </div>
-                <div class="mb-3">
-                  <label class="form-check-label" for="jabatan">Jabatan</label>
-                  <select class="form-select" id="jabatan">
-                    <option value="Produksi">Produksi</option>
-                    <option value="Karyawan">Karyawan</option>
-                    <option value="Manager">Manager</option>
-                  </select>
-                </div>
-                <div class="mb-3">
-                  <label for="ddp" class="form-label">Departement</label>
-                  <input type="text" class="form-control" id="ddp" value="Produksi" />
-                </div>
-                <div class="mb-3">
-                  <label for="gpp" class="form-label">Gaji pokok preiode</label>
-                  <input type="number" class="form-control gajih" id="gpp" value="50000" />
-                </div>
-                <div class="mb-3">
-                  <label for="lt" class="form-label">Lembur Terusan</label>
-                  <input type="number" class="form-control" id="lt" value="60000" />
-                </div>
-                <div class="mb-3">
-                  <label for="lembur" class="form-label">Lembur</label>
-                  <input type="number" class="form-control" id="lembur" value="75000" />
-                </div>
-                <!-- <div class="mb-3">
-                  <label for="premi" class="form-label">Premi Kehadiran</label>
-                  <input type="number" class="form-control" id="premi" value="5000" />
-                </div> -->
-                <div class="mb-3">
-                  <label for="kasbon" class="form-label">Kasbon</label>
-                  <input type="number" class="form-control" id="kasbon" value="0" min="0" />
-                </div>
-                <button type="button" class="btn btn-primary btn-submit">Submit</button>
               </form>
             </div>
           </div>
